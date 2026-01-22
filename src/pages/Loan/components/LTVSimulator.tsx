@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Info, AlertTriangle, ShieldCheck } from 'lucide-react';
+import { Info } from 'lucide-react';
 import { useStore } from '../../../store';
 import { cn } from '../../../lib/utils';
 
@@ -9,7 +9,7 @@ interface LTVSimulatorProps {
     collateralBTC?: number;
 }
 
-const LTVSimulator = ({ currentBTCPrice, loanAmount, collateralBTC }: LTVSimulatorProps) => {
+const LTVSimulator = ({ currentBTCPrice }: LTVSimulatorProps) => {
     const { btcPrice: storeBtcPrice } = useStore();
     // Use passed price or store price
     const btcPrice = currentBTCPrice || storeBtcPrice;

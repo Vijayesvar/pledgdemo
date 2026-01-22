@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Upload, CheckCircle, Loader2, FileText } from 'lucide-react';
+import { Upload, CheckCircle, FileText } from 'lucide-react';
 import { useStore } from '../../store';
-import { mockApi } from '../../api/mock';
+
 import { toast } from 'react-toastify';
 
 

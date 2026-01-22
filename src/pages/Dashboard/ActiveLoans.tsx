@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, AlertCircle } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
 import { useStore } from '../../store';
 import { formatCurrency } from '../../lib/utils';
 import type { Loan } from '../../types';

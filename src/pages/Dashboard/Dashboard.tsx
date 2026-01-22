@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Plus, CheckCircle, AlertCircle, ArrowRight, Building } from 'lucide-react';
+import { AlertCircle, ArrowRight, Building } from 'lucide-react';
 import { formatCurrency } from '../../lib/utils';
 import PortfolioSummary from './PortfolioSummary';
 import BTCPriceWidget from './BTCPriceWidget';

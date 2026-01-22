@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Bitcoin, Info, ShieldCheck, ExternalLink } from 'lucide-react';
 import { useStore } from '../../../store';
-import { cn } from '../../../lib/utils';
+
 
 interface LoanCalculatorProps {
     loanAmount: number;
@@ -27,9 +27,6 @@ const LoanCalculator = ({ loanAmount, setLoanAmount, onLoanAmountChange, btcPric
     const [loanInput, setLoanInput] = useState(loanAmount.toString());
 
     const LTV_RATIO = 0.5; // 50%
-    const INTEREST_RATE = 14.00;
-    const ADMIN_FEE_PERCENT = 2.00;
-    const MIN_ADMIN_FEE = 25 * 87; // Approx 25 USD in INR
 
     // Sync local input with prop changes if they differ
     useEffect(() => {
