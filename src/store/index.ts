@@ -35,11 +35,11 @@ export const useStore = create<AppState>()(
             loans: [],
             transactions: [],
             notifications: [],
-            btcPrice: 7200000,
+            btcPrice: 8000000,
 
             fetchBTCPrice: async () => {
                 try {
-                    const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr');
+                    const response = await fetch('https://lucky-wave-c3fe.wolf07279.workers.dev/');
                     if (!response.ok) throw new Error('Failed to fetch price');
                     const data = await response.json();
                     if (data.bitcoin?.inr) {
@@ -48,7 +48,7 @@ export const useStore = create<AppState>()(
                 } catch (error) {
                     console.warn('Failed to fetch real BTC price, using fallback:', error);
                     // Keep existing price or set realistic fallback if 0
-                    if (get().btcPrice === 0) set({ btcPrice: 8650000 });
+                    if (get().btcPrice === 0) set({ btcPrice: 8000000 });
                 }
             },
 

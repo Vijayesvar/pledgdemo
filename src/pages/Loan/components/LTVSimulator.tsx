@@ -72,7 +72,7 @@ const LTVSimulator = ({ currentBTCPrice }: LTVSimulatorProps) => {
                                     <Info className="h-3.5 w-3.5 text-slate-400 ml-1.5 cursor-help" />
                                 </div>
                                 <div className="text-xs text-slate-500">
-                                    Approximate BTC price: {formatINR(btcPrice)}
+                                    Current BTC price: {formatINR(btcPrice)}
                                 </div>
                             </div>
 

@@ -236,6 +236,23 @@ const ApplyLoan = () => {
                                         <option value="Other">Other</option>
                                     </select>
                                 </div>
+
+                                {/* Repayment Summary */}
+                                <div className="bg-slate-50 rounded-xl p-4 border border-slate-200 space-y-3">
+                                    <div className="flex justify-between items-center text-sm">
+                                        <span className="text-slate-600">Interest Rate</span>
+                                        <span className="font-semibold text-bitcoin-orange">14% p.a.</span>
+                                    </div>
+                                    <div className="flex justify-between items-center">
+                                        <span className="text-slate-600 font-medium">Total Repayable Amount</span>
+                                        <span className="text-xl font-bold text-slate-900">
+                                            {formatCurrency(loanAmount + (loanAmount * 0.14 * (parseInt(watch('tenure')) / 12)))}
+                                        </span>
+                                    </div>
+                                    <div className="text-xs text-slate-500 text-right">
+                                        Includes principal + interest for {watch('tenure')} months
+                                    </div>
+                                </div>
                             </div>
 
                             <div className="flex justify-end pt-6 border-t border-slate-100">

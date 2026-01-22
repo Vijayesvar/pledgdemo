@@ -70,7 +70,15 @@ export const mockApi = {
     },
 
     fetchBTCPrice: async (): Promise<number> => {
-        // Simulating fetching price
-        return 7200000 + (Math.random() * 10000 - 5000);
+        try {
+            const response = await fetch('https://lucky-wave-c3fe.wolf07279.workers.dev/');
+            if (!response.ok) throw new Error('API Error');
+            const data = await response.json();
+            return data.bitcoin.inr;
+        } catch (error) {
+            console.error('API Fetch Error', error);
+            // Fallback if API fails
+            return 8000000;
+        }
     }
 };
