@@ -9,6 +9,7 @@ import {
 import { useStore } from '../store';
 import { cn } from '../lib/utils';
 import NotificationCenter from '../components/NotificationCenter';
+import pledgIcon from '../assets/pledg-icon.png';
 
 const MainLayout = () => {
     const location = useLocation();
@@ -38,7 +39,7 @@ const MainLayout = () => {
                 <div className="flex-1 flex flex-col min-h-0">
                     <div className="flex items-center h-16 flex-shrink-0 px-6 border-b border-slate-100 mt-2">
                         <div className="flex items-center group cursor-pointer transition-opacity hover:opacity-90">
-                            <img src="/src/assets/pledg-icon.png" alt="Pledg" className="h-10 w-10 object-contain" />
+                            <img src={pledgIcon} alt="Pledg" className="h-10 w-10 object-contain" />
                             <span className="ml-3 text-xl font-bold text-slate-900 tracking-tight">Pledg</span>
                         </div>
                     </div>

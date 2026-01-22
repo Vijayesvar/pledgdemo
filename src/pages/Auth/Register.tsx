@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { Loader2 } from 'lucide-react';
 import { mockApi } from '../../api/mock';
+import pledgIcon from '../../assets/pledg-icon.png';
 
 const Register = () => {
     const { register, handleSubmit, formState: { errors }, watch } = useForm();
@@ -26,6 +27,9 @@ const Register = () => {
 
     return (
         <>
+            <div className="flex justify-center mb-6">
+                <img src={pledgIcon} alt="Pledg" className="h-12 w-12 object-contain" />
+            </div>
             <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">
