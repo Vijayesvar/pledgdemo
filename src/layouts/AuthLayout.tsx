@@ -24,7 +24,7 @@ const AuthLayout = () => {
                         Pledg
                     </h2>
                     <p className="mt-2 text-sm text-gray-400 font-medium tracking-wide uppercase">
-                        Bitcoin-Backed Loans. Zero Liquidations.*
+                        India's first Bitcoin backed lending platform
                     </p>
                 </div>
 
