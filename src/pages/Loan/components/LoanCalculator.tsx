@@ -126,7 +126,7 @@ const LoanCalculator = ({ loanAmount, setLoanAmount, onLoanAmountChange, btcPric
                             <div>
                                 <h4 className="text-sm font-bold text-slate-900">Security first, always.</h4>
                                 <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                                    Your collateral is held securely in custody with BitGo or our trusted partners — never lent out to earn interest. We don't take risks with your assets just to offer a lower rate.
+                                    Your collateral is held securely in custody with BitGo or our trusted partners, never lent out to earn interest. We don't take risks with your assets just to offer a lower rate.
                                 </p>
                                 <a href="#" className="inline-flex items-center text-xs font-semibold text-sky-700 mt-2 hover:text-sky-800 hover:underline">
                                     How Pledg keeps your collateral safe <ExternalLink className="h-3 w-3 ml-1" />

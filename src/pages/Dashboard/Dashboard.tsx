@@ -144,16 +144,16 @@ const Dashboard = () => {
                         />
 
                         <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                            <div className="flex items-center justify-between">
+                            <div className="flex flex-col items-center justify-center text-center space-y-4">
                                 <div>
                                     <p className="text-sm font-medium text-slate-500">Ready to proceed?</p>
-                                    <p className="text-lg font-bold text-slate-900 mt-1">
+                                    <p className="text-xl font-bold text-slate-900 mt-1">
                                         Get {formatCurrency(loanAmount)} today
                                     </p>
                                 </div>
                                 <button
                                     onClick={() => navigate('/loans/apply', { state: { initialAmount: loanAmount } })}
-                                    className="btn-primary flex items-center px-6 py-3"
+                                    className="btn-primary flex items-center px-8 py-3"
                                 >
                                     Proceed to Application <ArrowRight className="h-4 w-4 ml-2" />
                                 </button>
