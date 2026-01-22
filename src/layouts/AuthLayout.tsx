@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-
+import pledgIcon from '../assets/pledg-icon.png';
 
 const AuthLayout = () => {
     return (
@@ -18,7 +18,7 @@ const AuthLayout = () => {
                 {/* Logo Section */}
                 <div className="text-center mb-8">
                     <div className="mx-auto h-20 w-20 bg-white/5 backdrop-blur-xl rounded-2xl flex items-center justify-center border border-white/10 shadow-[0_0_30px_rgba(247,147,26,0.2)]">
-                        <img src="/src/assets/pledg-icon.png" alt="Pledg" className="h-12 w-12 object-contain" />
+                        <img src={pledgIcon} alt="Pledg" className="h-12 w-12 object-contain" />
                     </div>
                     <h2 className="mt-6 text-3xl font-extrabold text-white tracking-tight">
                         Pledg
